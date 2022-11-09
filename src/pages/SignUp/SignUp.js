@@ -18,6 +18,7 @@ const SignUp = () => {
                   <span className="label-text">Email</span>
                 </label>
                 <input
+                name='email'
                   type="text"
                   placeholder="email"
                   className="input input-bordered"
@@ -28,7 +29,8 @@ const SignUp = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="text"
+                  name='password'
+                  type="password"
                   placeholder="password"
                   className="input input-bordered"
                 />

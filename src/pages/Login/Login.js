@@ -13,7 +13,7 @@ const Login = () => {
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="hero-content flex-col lg:flex-row">
           <div className="text-center lg:text-left">
             <img
               src={login}
@@ -29,6 +29,7 @@ const Login = () => {
                   <span className="label-text">Email</span>
                 </label>
                 <input
+                  name="email"
                   type="text"
                   placeholder="email"
                   className="input input-bordered"
@@ -39,7 +40,8 @@ const Login = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="text"
+                  name="password"
+                  type="password"
                   placeholder="password"
                   className="input input-bordered"
                 />
