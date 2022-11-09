@@ -1,0 +1,56 @@
+[
+    {
+        "id":1,
+        "title":"Classic bathroom cleaning",
+        "price":500,
+        "description":"The sensors can detect anomalies and alert cleaners in real time, so it becomes like an automated cleaning supervisor. This will help move the industry from schedule-based cleaning to need-based cleaning.",
+        "image":"https://www.cleanlink.com/resources/editorial/2017/washing-bathroom-counter-21470.jpg",
+        "rating":4.9
+        
+    },
+    {
+        "id":2,
+        "title":"Kitchen cleaning",
+        "price":800,
+        "description":"Starts working on contact to break down clogs and specifically designed to destroy tough, greasy kitchen clogs unclogs kitchen sinks, even drains blocked from grease, cooking oil, or bacon grease. Safe on PVC, metal pipes, garbage disposals, and septic systems. Protects pipes from corrosion.",
+        "image":"https://m.media-amazon.com/images/I/61paG8PLlUL._SY450_.jpg",
+        "rating":4.8
+        
+    },
+    {
+        "id":3,
+        "title":"Home renovation waste disposal",
+        "price":1500,
+        "description":"Cobra Waste Removals is a family-owned waste clearance company based in the North East. They provide a wide range of top-notch removal services, including general household items, fly-tipping removal and much more. Cobra Waste Removals provides same-day service to remove rubbish, waste and unwanted items near buildings and property.",
+        "image":"https://threebestrated.co.uk/images/CobraWasteRemovals-Sunderland-UK.jpeg",
+        "rating":4.9
+        
+    },
+    {
+        "id":4,
+        "title":"Sticker, glue & rigid paint mark removal",
+        "price":1000,
+        "description":"If you’re a fan of DIY projects, you’re in for good news. The easiest way to jump on removing wallpaper glue is through a simple, homemade solution that will soften the glue and make it easier to scrape away. To get started, gather the following materials. If you don’t have anything on the list, a local hardware store will.",
+        "image":"https://media.architecturaldigest.com/photos/5a2aaa0cf632970c0d6e5524/master/pass/how-to-remove-wallpaper.jpg",
+        "rating":4.8
+        
+    },
+    {
+        "id":5,
+        "title":"All home cleaning(vacuum)",
+        "price":1000,
+        "description":"If you’re looking for the best vacuum cleaner service,i can help you out. We can be your most-trusted option for rapid, easy local vacuum cleaner service. Whether you need vacuum cleaner pump service, vacuum cleaner hose service, or vacuum cleaner motor service, our team of vacuum experts are the best in the business. Our vacuum cleaner service professionals are highly trained, licensed, vetted, local, and guaranteed to help fix all of your vacuum cleaner necessity. If your vacuum cleaner is running slowly or not running at all, we can fix it.",
+        "image":"https://xiaomiui.net/wp-content/uploads/2022/05/mi-vacuum-cleaner-light-design.jpg",
+        "rating":4.8
+        
+    },
+    {
+        "id":6,
+        "title":"Fully sanitized your home",
+        "price":2000,
+        "description":"If you can't avoid traveling – or are trying to make your way home – during the coronavirus pandemic, try the following steps to achieving a clean hotel room to help improve your odds of staying healthy – and lower your anxiety level. These high-touch areas are used by everyone in your room, as well as housekeeping and anyone else visiting your room. Give them a good wipe down on day one; you might want to revisit the task later in the cruise, as well.",
+        "image":"https://uploads-ssl.webflow.com/5db69a685e46c15aeb781ac6/5f2d2b7e9c554e614496f012_dis.jpg",
+        "rating":4.8
+        
+    }
+]
