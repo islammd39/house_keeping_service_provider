@@ -7,10 +7,10 @@ const MyReview = () => {
 
     const [reviews, setReviews] = useState([])
 
-    // const url = `http://localhost:5000/reviews?email=${user.email}`
+    // const url = `https://b6a11-service-review-server-side-islammd39.vercel.app/reviews?email=${user.email}`
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/reviews?.email=${user?.email}`)
+        fetch(`https://b6a11-service-review-server-side-islammd39.vercel.app/reviews?.email=${user?.email}`)
         .then(res => res.json())
         .then(data => setReviews(data))
 
