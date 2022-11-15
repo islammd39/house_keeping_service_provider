@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../../context/AuthProvider/AuthProvider";
 import MyReview from "../../MyReview/MyReview";
 
@@ -11,7 +11,7 @@ const ServiceDetails = () => {
     const form = e.target;
     const name = form.name.value;
     const photoUrl = form.photoUrl.value;
-    const email = form.email?.email || "please login";
+    const email = form.email.value || "please login";
     const message = form.message.value;
 
     const review = {
@@ -22,7 +22,7 @@ const ServiceDetails = () => {
       customerEmail: email,
       customerReview: message,
     };
-
+   
     fetch(
       "https://b6a11-service-review-server-side-islammd39.vercel.app/reviews",
       {
@@ -46,6 +46,7 @@ const ServiceDetails = () => {
 
   return (
     <div>
+        
       <form onSubmit={handleReview}>
         <div className="card card-compact w-96 bg-base-100 shadow-xl mx-auto">
           <figure>
@@ -86,7 +87,7 @@ const ServiceDetails = () => {
           className="textarea textarea-accent w-full h-28 my-5"
           placeholder="your review"
         ></textarea>
-        <button className="btn btn-primary mb-10"><Link to="/reviews">Submit your review</Link></button>
+        <button type="submit" className="btn btn-primary mb-10">Submit</button>
       </form>
       <MyReview></MyReview>
     </div>

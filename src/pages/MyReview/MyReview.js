@@ -19,7 +19,7 @@ const MyReview = () => {
 
     return (
         <div>
-            <h3>{reviews.length}</h3>
+            <h3 className='text-center font-bold text-2xl text-accent'> Total reviews {reviews.length}</h3>
             <div className="overflow-x-auto w-full">
   <table className="table w-full">
    

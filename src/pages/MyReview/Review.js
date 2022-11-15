@@ -31,7 +31,7 @@ const Review = ({review}) => {
         </td>
         <td>{customerReview}</td>
         <th>
-          <button className="btn btn-ghost btn-xs"><Link to="/serviceDetails:id">Details</Link></button>
+          <button className="btn btn-ghost btn-xs"><Link to="/service">Create more review</Link></button>
         </th>
       </tr>
 
