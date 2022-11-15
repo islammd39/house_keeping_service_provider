@@ -25,11 +25,7 @@ const MyReview = () => {
    
     <thead>
       <tr>
-        <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
-        </th>
+        <th></th>
         <th>Name</th>
         <th>Email</th>
         <th>Review</th>

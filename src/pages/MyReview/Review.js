@@ -1,15 +1,32 @@
-
+import { ToastContainer, toast } from 'react-toastify';
+import { useContext} from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../context/AuthProvider/AuthProvider";
 
 const Review = ({review}) => {
+  const {user} = useContext(AuthContext)
     const {customerName, customerPhoto, customerEmail, customerReview} = review;
+    const handleDelate=(user)=>{
+        if(user){
+          console.log(review._id);
+          fetch(`http://localhost:5000/reviews/${review._id}`,{
+            method:"DELETE"
+          })
+          .then(res=> res.json())
+          .then(data=> {
+            console.log(data)
+            if(data.deletedCount > 0){
+              toast("successfully deleted!");
+              
+            }
+          })
+        }
+    }
   return (
     
       <tr>
         <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
+         <button onClick={()=>handleDelate(user)} className="btn">X</button>
         </th>
         <td>
           <div className="flex items-center space-x-3">
@@ -31,8 +48,10 @@ const Review = ({review}) => {
         </td>
         <td>{customerReview}</td>
         <th>
+        <ToastContainer />
           <button className="btn btn-ghost btn-xs"><Link to="/service">Create more review</Link></button>
         </th>
+      
       </tr>
 
   );
