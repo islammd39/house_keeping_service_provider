@@ -36,7 +36,7 @@ const Header = () => {
               {
                 user?.email?
                 <>
-                <Link to="/reviews">Review</Link>
+                <Link to="/reviews">My Review</Link>
                 <button onClick={handleSignOut} className="btn btn-primary">LogOut</button>
                 </>
                 :
