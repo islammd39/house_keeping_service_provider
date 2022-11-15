@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext} from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../../context/AuthProvider/AuthProvider";
 import MyReview from "../../MyReview/MyReview";
@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 const ServiceDetails = () => {
   const { title, image, _id , description, price, rating} = useLoaderData();
   const { user } = useContext(AuthContext);
+ 
   const handleReview = (e) => {
     e.preventDefault();
     const form = e.target;
