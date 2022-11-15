@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../../context/AuthProvider/AuthProvider";
 import MyReview from "../../MyReview/MyReview";
+import { ToastContainer, toast } from 'react-toastify';
 
 const ServiceDetails = () => {
   const { title, image, _id , description, price, rating} = useLoaderData();
@@ -37,7 +38,7 @@ const ServiceDetails = () => {
       .then((data) => {
         console.log(data);
         if (data.acknowledged) {
-          alert("review complete");
+            toast("Successfully Done Your review!");
           form.reset();
         }
       })
@@ -88,8 +89,10 @@ const ServiceDetails = () => {
           placeholder="your review"
         ></textarea>
         <button type="submit" className="btn btn-primary mb-10">Submit</button>
+        <button type="submit" className="btn btn-outline ml-5"><Link to="/reviews">Let's check your review</Link></button>
       </form>
       <MyReview></MyReview>
+      <ToastContainer />
     </div>
   );
 };
